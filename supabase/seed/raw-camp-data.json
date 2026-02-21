@@ -1,0 +1,931 @@
+{
+  "2026 Camps": [
+    {
+      "Camp Name": "ATX Kids Club",
+      "Category": "General / Day Camp",
+      "Ages": "4-13",
+      "Dates": "5/26-8/14",
+      "Price ($/wk or noted)": "$135-500 (sliding scale)",
+      "Location / Address": "3005 S. Lamar Ste. D-109 #371",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Sliding scale; public transit field trips",
+      "Registration Status": "Open",
+      "Website": "atxkidsclub.org"
+    },
+    {
+      "Camp Name": "Austin Rising School",
+      "Category": "General / Day Camp",
+      "Ages": "6-15",
+      "Dates": "6/1-8/7",
+      "Price ($/wk or noted)": "$400/wk or $85/day",
+      "Location / Address": "6211 Parkwood Dr.",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Themed weeks (HP, D&D, Forts)",
+      "Registration Status": "Open",
+      "Website": "austinrisingschool.com"
+    },
+    {
+      "Camp Name": "Austin YMCA Full-Day Camps",
+      "Category": "General / Day Camp",
+      "Ages": "4-12",
+      "Dates": "5/26-8/14",
+      "Price ($/wk or noted)": "$272-365/wk",
+      "Location / Address": "Multiple YMCA locations",
+      "City/Area": "Austin Metro",
+      "Discounts / Notes": "Scholarships available; pool daily at Y centers",
+      "Registration Status": "Open",
+      "Website": "austinymca.org/camp"
+    },
+    {
+      "Camp Name": "Austin YMCA Half-Day Camps",
+      "Category": "General / Day Camp",
+      "Ages": "3-12",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "$145-170",
+      "Location / Address": "Multiple YMCA locations",
+      "City/Area": "Austin Metro",
+      "Discounts / Notes": "Morning & afternoon options; preschool/sports/gym/swim",
+      "Registration Status": "Open",
+      "Website": "austinymca.org/camp"
+    },
+    {
+      "Camp Name": "Austin Zoo Summer Camps",
+      "Category": "General / Day Camp",
+      "Ages": "6-12",
+      "Dates": "6/1-8/7",
+      "Price ($/wk or noted)": "$395-425/wk",
+      "Location / Address": "10808 Rawhide Trl.",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Max 20 campers; zoo tours & animal encounters",
+      "Registration Status": "Open",
+      "Website": "austinzoo.org"
+    },
+    {
+      "Camp Name": "Bricks & Minifigs South Austin",
+      "Category": "General / Day Camp",
+      "Ages": "7-14",
+      "Dates": "6/1-8/31",
+      "Price ($/wk or noted)": "$50-250",
+      "Location / Address": "5207 Brodie Ln. #130",
+      "City/Area": "Sunset Valley",
+      "Discounts / Notes": "LEGO building; kids take builds home",
+      "Registration Status": "Open",
+      "Website": "bricksandminifigs.com/southaustin-tx"
+    },
+    {
+      "Camp Name": "Camp Balcones (Camp Fire)",
+      "Category": "General / Day Camp",
+      "Ages": "6-14",
+      "Dates": "6/1-7/3",
+      "Price ($/wk or noted)": "$375-450/wk",
+      "Location / Address": "Emma Long Metropolitan Park, 1600 City Park Rd.",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Nature-based; STEAM; transportation available",
+      "Registration Status": "Open",
+      "Website": "camp-fire.org"
+    },
+    {
+      "Camp Name": "Camp Doublecreek",
+      "Category": "General / Day Camp",
+      "Ages": "4-14",
+      "Dates": "5/26-8/7",
+      "Price ($/wk or noted)": "$550/wk",
+      "Location / Address": "Multiple pickup locations",
+      "City/Area": "Austin Metro",
+      "Discounts / Notes": "50+ yrs; 8 bus pickup spots; horseback option",
+      "Registration Status": "Open",
+      "Website": "campdoublecreek.com"
+    },
+    {
+      "Camp Name": "Camp Half-Blood Austin",
+      "Category": "General / Day Camp",
+      "Ages": "9-18",
+      "Dates": "6/1-7/30",
+      "Price ($/wk or noted)": "$747",
+      "Location / Address": "McKinney Falls State Park Dining Hall",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Percy Jackson themed; scholarships available",
+      "Registration Status": "Open",
+      "Website": "camphalfbloodaustin.org"
+    },
+    {
+      "Camp Name": "Camp Hope Day Camp",
+      "Category": "General / Day Camp",
+      "Ages": "6-12",
+      "Dates": "7/6-10, 7/13-17",
+      "Price ($/wk or noted)": "$250 ($195 early bird thru 4/15)",
+      "Location / Address": "9508 Great Hills Trl.",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Bible-based; STEM, drama, music",
+      "Registration Status": "Open",
+      "Website": "tllc.org/camp"
+    },
+    {
+      "Camp Name": "Camp Vamonos!",
+      "Category": "General / Day Camp",
+      "Ages": "5-11",
+      "Dates": "6/1-8/10",
+      "Price ($/wk or noted)": "$250/wk",
+      "Location / Address": "6919 Reese Ln.",
+      "City/Area": "Austin (Crestview)",
+      "Discounts / Notes": "Bilingual; backyard + daily outings",
+      "Registration Status": "Open",
+      "Website": "campvamonos.com"
+    },
+    {
+      "Camp Name": "Country Home Learning Center",
+      "Category": "General / Day Camp",
+      "Ages": "K-13",
+      "Dates": "6/1-8/14",
+      "Price ($/wk or noted)": "$315/wk",
+      "Location / Address": "NW & SW Austin locations",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Field trips, swim, reading program",
+      "Registration Status": "Open",
+      "Website": "countryhomelearningcenter.com/summer-camp"
+    },
+    {
+      "Camp Name": "Creative Action Summer Camp",
+      "Category": "General / Day Camp",
+      "Ages": "5-11",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "$395-425/wk",
+      "Location / Address": "Multiple school campuses",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Arts-based; professional teaching artists",
+      "Registration Status": "Open",
+      "Website": "creativeaction.org"
+    },
+    {
+      "Camp Name": "Dragon's Lair Comic & Fantasy",
+      "Category": "General / Day Camp",
+      "Ages": "~7-17",
+      "Dates": "6/1-8/14",
+      "Price ($/wk or noted)": "$500-600",
+      "Location / Address": "2438 W. Anderson Ste. B-1",
+      "City/Area": "Austin",
+      "Discounts / Notes": "D&D, Pokemon, How to Make Comics, MTG; aftercare; overnight option",
+      "Registration Status": "Open",
+      "Website": "dlair.net/austin/events"
+    },
+    {
+      "Camp Name": "Earth Native Wilderness School (Day)",
+      "Category": "Outdoor / Nature",
+      "Ages": "4-12",
+      "Dates": "5/26-8/14",
+      "Price ($/wk or noted)": "$235-475/wk",
+      "Location / Address": "Multiple locations",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Scholarships; aftercare; Nature Quest/Bushcraft/Forest Explorers",
+      "Registration Status": "Open",
+      "Website": "earthnativeschool.com/summer-camps"
+    },
+    {
+      "Camp Name": "Fantastic Magic Camp",
+      "Category": "General / Day Camp",
+      "Ages": "5-12",
+      "Dates": "6/1-8/14",
+      "Price ($/wk or noted)": "$450/wk",
+      "Location / Address": "Crestview (N Central) & Pflugerville ISD (Mt Playmore)",
+      "City/Area": "Austin/Pflugerville",
+      "Discounts / Notes": "10% sibling discount; scholarships; 9am-4pm + optional 4-6pm rehearsal",
+      "Registration Status": "Open",
+      "Website": "magiccamp.com"
+    },
+    {
+      "Camp Name": "Kidventure Day Camps",
+      "Category": "General / Day Camp",
+      "Ages": "3-Grade 9",
+      "Dates": "6/1-8/7",
+      "Price ($/wk or noted)": "$370/wk",
+      "Location / Address": "Westlake, Round Rock, Steiner Ranch, Lakeway, Rough Hollow, Sweetwater, Hamilton Pool Rd.",
+      "City/Area": "Austin Metro",
+      "Discounts / Notes": "30+ yrs; all-adult staff; 'Game On!' 2026 theme",
+      "Registration Status": "Open",
+      "Website": "kidventure.com"
+    },
+    {
+      "Camp Name": "Neuron Garage",
+      "Category": "General / Day Camp",
+      "Ages": "5-12",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "$395-455/wk",
+      "Location / Address": "N, Central, S Austin, Westlake",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Growth mindset; recycled materials engineering",
+      "Registration Status": "Open",
+      "Website": "neurongarage.com"
+    },
+    {
+      "Camp Name": "Steve & Kate's Camp",
+      "Category": "General / Day Camp",
+      "Ages": "Varies",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "Varies",
+      "Location / Address": "Multiple Austin locations",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Kid-directed; choose own activities",
+      "Registration Status": "Open",
+      "Website": "steveandkates.com"
+    },
+    {
+      "Camp Name": "Club SciKidz",
+      "Category": "STEM / Tech",
+      "Ages": "4-15",
+      "Dates": "6/15-8/7",
+      "Price ($/wk or noted)": "$425-515/wk",
+      "Location / Address": "Multiple locations",
+      "City/Area": "Austin",
+      "Discounts / Notes": "70+ themed camps; scholarships; aftercare",
+      "Registration Status": "Open",
+      "Website": "austin.clubscikidz.com"
+    },
+    {
+      "Camp Name": "Girlstart STEM Camps",
+      "Category": "STEM / Tech",
+      "Ages": "Girls entering 4th-8th grade",
+      "Dates": "6/1-7/31",
+      "Price ($/wk or noted)": "$450/wk ($395 early bird thru 2/28)",
+      "Location / Address": "1400 W. Anderson Ln.",
+      "City/Area": "Austin",
+      "Discounts / Notes": "$55 early bird discount thru Feb 28; nationally recognized",
+      "Registration Status": "Open",
+      "Website": "girlstart.org"
+    },
+    {
+      "Camp Name": "Idea Lab STEM Camps",
+      "Category": "STEM / Tech",
+      "Ages": "5-12",
+      "Dates": "Spring Break & Summer 2026",
+      "Price ($/wk or noted)": "$415-445/wk",
+      "Location / Address": "8620 Burnet Rd. / 13642 Research Blvd. / 7817 LaCrosse Ave. / Magellan International School",
+      "City/Area": "Austin (4 locations)",
+      "Discounts / Notes": "15% off NW/Circle C thru 3/31; 10% off Central thru 3/31",
+      "Registration Status": "Open",
+      "Website": "idealabkids.com"
+    },
+    {
+      "Camp Name": "Mad Science Camps",
+      "Category": "STEM / Tech",
+      "Ages": "5-12",
+      "Dates": "3/16-3/20, 5/26-8/14",
+      "Price ($/wk or noted)": "$240-420/wk",
+      "Location / Address": "Multiple locations",
+      "City/Area": "Austin Metro",
+      "Discounts / Notes": "Register now, pay later; 12 themes (robots, rockets, Spy Academy, etc.)",
+      "Registration Status": "Open",
+      "Website": "austin.madscience.org"
+    },
+    {
+      "Camp Name": "Lavner Education",
+      "Category": "STEM / Tech",
+      "Ages": "6-14",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "~$599/wk (discounts available)",
+      "Location / Address": "St. Edward's University; Magellan International School",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Coding, Minecraft, AI, Robotics, Game Design",
+      "Registration Status": "Open",
+      "Website": "lavnereducation.com"
+    },
+    {
+      "Camp Name": "Creator Camp",
+      "Category": "STEM / Tech",
+      "Ages": "5-13",
+      "Dates": "Spring Break & Summer 2026",
+      "Price ($/wk or noted)": "$170-275",
+      "Location / Address": "Cedar Park Exchange ATX / Bridgeland Church Round Rock / Glad Tidings / Austin Gateway S / Lake Travis Methodist Lakeway",
+      "City/Area": "Cedar Park / Round Rock / Austin / Lakeway",
+      "Discounts / Notes": "Animation, filmmaking, music production, entrepreneurship; Shark Tank featured",
+      "Registration Status": "Open",
+      "Website": "creatorcamp.org"
+    },
+    {
+      "Camp Name": "Thinkery Camp",
+      "Category": "STEM / Tech",
+      "Ages": "Rising K-3rd",
+      "Dates": "6/1-8/14",
+      "Price ($/wk or noted)": "Member $385 / Standard $425",
+      "Location / Address": "1830 Simond Ave.",
+      "City/Area": "Austin",
+      "Discounts / Notes": "STEAM; 5 rotating themes: Nature, Art, Maker, Storytelling, Community",
+      "Registration Status": "Open",
+      "Website": "thinkeryaustin.org/camp"
+    },
+    {
+      "Camp Name": "UT Austin WiSTEM Camps",
+      "Category": "STEM / Tech",
+      "Ages": "Rising 10th-12th grade (girls)",
+      "Dates": "June-July 2026",
+      "Price ($/wk or noted)": "$200 (1-day) / $350 (2-day)",
+      "Location / Address": "UT Austin campus",
+      "City/Area": "Austin",
+      "Discounts / Notes": "CEO Day Camps on-campus; virtual SEE & SLA academies; registration thru 5/1/26",
+      "Registration Status": "Open",
+      "Website": "womeninstem.utexas.edu/high-school-camps"
+    },
+    {
+      "Camp Name": "KidStrong (multiple locations)",
+      "Category": "STEM / Tech",
+      "Ages": "4-11",
+      "Dates": "June-August",
+      "Price ($/wk or noted)": "$250-300/wk",
+      "Location / Address": "South / North / Cedar Park / Pflugerville",
+      "City/Area": "Austin Metro",
+      "Discounts / Notes": "Physical + mental development camps",
+      "Registration Status": "Open",
+      "Website": "kidstrong.com"
+    },
+    {
+      "Camp Name": "Longhorn Engineering (UT Austin)",
+      "Category": "STEM / Tech",
+      "Ages": "High school",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "Varies",
+      "Location / Address": "UT Austin campus",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Registration closes Feb 22 — urgent!",
+      "Registration Status": "Closing Soon",
+      "Website": "engineering.utexas.edu"
+    },
+    {
+      "Camp Name": "The Art Garage",
+      "Category": "Arts / Music",
+      "Ages": "6-14",
+      "Dates": "Spring Break & Summer 2026",
+      "Price ($/wk or noted)": "$409/wk or $95/day",
+      "Location / Address": "Circle Drive (Oak Hill) / N Lamar (Brentwood) / Brodie Ln (S Austin)",
+      "City/Area": "Austin (3 locations)",
+      "Discounts / Notes": "$25 off thru 3/31 w/ code 365Things; ceramics, glass fusion, painting, sculpture",
+      "Registration Status": "Open",
+      "Website": "theartgarageaustin.com"
+    },
+    {
+      "Camp Name": "Cordovan Art School",
+      "Category": "Arts / Music",
+      "Ages": "Varies",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "Varies",
+      "Location / Address": "Georgetown location + others",
+      "City/Area": "Georgetown/Austin",
+      "Discounts / Notes": "40+ themed camps; painting, drawing, mixed media",
+      "Registration Status": "Open",
+      "Website": "cordovanartschool.com"
+    },
+    {
+      "Camp Name": "Create! Studio ATX",
+      "Category": "Arts / Music",
+      "Ages": "4-9",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "Varies",
+      "Location / Address": "Austin",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Themed art weeks for young kids",
+      "Registration Status": "Open",
+      "Website": "createstudioatx.com"
+    },
+    {
+      "Camp Name": "Cooking, Arts & Swim (Westlake Chinese Academy)",
+      "Category": "Arts / Music",
+      "Ages": "4-12",
+      "Dates": "6/1-6/26",
+      "Price ($/wk or noted)": "$450/wk",
+      "Location / Address": "6800 Spanish Oaks Club Blvd.",
+      "City/Area": "Austin (Westlake)",
+      "Discounts / Notes": "Cooking + arts + creek swim daily; aftercare available",
+      "Registration Status": "Open",
+      "Website": "westlakechineseacademy.org/camp"
+    },
+    {
+      "Camp Name": "Dougherty Arts Center (City of Austin)",
+      "Category": "Arts / Music",
+      "Ages": "Varies",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "City rates",
+      "Location / Address": "1110 Barton Springs Rd.",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Painting, pottery, photography, animation, drama; registration opens 2/28 for residents",
+      "Registration Status": "Opens 2/28",
+      "Website": "austintexas.gov/department/summer-camps-0"
+    },
+    {
+      "Camp Name": "TexARTS",
+      "Category": "Theatre / Dance / Performing Arts",
+      "Ages": "5-17",
+      "Dates": "5/26-8/7",
+      "Price ($/wk or noted)": "$285-750/wk",
+      "Location / Address": "1110 S RR 620",
+      "City/Area": "Lakeway",
+      "Discounts / Notes": "School of Rock musical theatre 2-week camp; various arts camps",
+      "Registration Status": "Open",
+      "Website": "tex-arts.org"
+    },
+    {
+      "Camp Name": "Hello Dancer",
+      "Category": "Theatre / Dance / Performing Arts",
+      "Ages": "14-18",
+      "Dates": "6/8-7/30",
+      "Price ($/wk or noted)": "$275-325/wk",
+      "Location / Address": "4410 Burnet Rd.",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Dance intensive for teens",
+      "Registration Status": "Open",
+      "Website": "hellodancer.com"
+    },
+    {
+      "Camp Name": "Trinity Episcopal - Musical Theatre",
+      "Category": "Theatre / Dance / Performing Arts",
+      "Ages": "Grades 1-10",
+      "Dates": "6/8-6/19",
+      "Price ($/wk or noted)": "Varies",
+      "Location / Address": "3901 Bee Cave Rd.",
+      "City/Area": "West Lake Hills",
+      "Discounts / Notes": "2-week Broadway-style camp; evening performance",
+      "Registration Status": "Open",
+      "Website": "austintrinity.org/programs/summer"
+    },
+    {
+      "Camp Name": "Camp Trinity",
+      "Category": "Theatre / Dance / Performing Arts",
+      "Ages": "Rising K-8th",
+      "Dates": "6/1-6/5",
+      "Price ($/wk or noted)": "$275",
+      "Location / Address": "3901 Bee Cave Rd.",
+      "City/Area": "West Lake Hills",
+      "Discounts / Notes": "Half-day sessions; arts, sciences, athletics; teacher-led",
+      "Registration Status": "Open",
+      "Website": "austintrinity.org/programs/summer"
+    },
+    {
+      "Camp Name": "Austin Youth Fitness",
+      "Category": "Sports / Fitness",
+      "Ages": "4-11",
+      "Dates": "6/1-8/14",
+      "Price ($/wk or noted)": "$325-600/wk",
+      "Location / Address": "Pease Park",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Multi-sport fitness camps",
+      "Registration Status": "Open",
+      "Website": "austinyouthfitness.com"
+    },
+    {
+      "Camp Name": "Capital Gymnastics (Round Rock / Pflugerville)",
+      "Category": "Sports / Fitness",
+      "Ages": "4-12",
+      "Dates": "5/26-8/14",
+      "Price ($/wk or noted)": "$60/day",
+      "Location / Address": "Round Rock & Pflugerville locations",
+      "City/Area": "Round Rock / Pflugerville",
+      "Discounts / Notes": "Drop-in daily gymnastics camps",
+      "Registration Status": "Open",
+      "Website": "capitalgymnastics.com"
+    },
+    {
+      "Camp Name": "Camp Jump! at Jump Gymnastics",
+      "Category": "Sports / Fitness",
+      "Ages": "3-10",
+      "Dates": "6/1-8/14",
+      "Price ($/wk or noted)": "$355 half-day / $445 full-day / $545 extended day",
+      "Location / Address": "S Central 6800 W Gate / N Central 2117 W Anderson / Domain 10910 Domain Dr. / Hutto 571 Ed Schmidt Blvd.",
+      "City/Area": "Austin (4 locations)",
+      "Discounts / Notes": "10% sibling discount; voted Austin Family Most Fun Camp 8x",
+      "Registration Status": "Open",
+      "Website": "jumpgymnastics.com/campjump"
+    },
+    {
+      "Camp Name": "Texas Rowing Center (Elementary)",
+      "Category": "Sports / Fitness",
+      "Ages": "7-10",
+      "Dates": "6/1-8/14",
+      "Price ($/wk or noted)": "$325/wk",
+      "Location / Address": "1541 West Cesar Chavez",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Learn-to-row; fun water activities",
+      "Registration Status": "Open",
+      "Website": "texasrowingcenter.com"
+    },
+    {
+      "Camp Name": "Texas Rowing Center (Middle School)",
+      "Category": "Sports / Fitness",
+      "Ages": "11-13",
+      "Dates": "6/1-8/14",
+      "Price ($/wk or noted)": "$400/wk",
+      "Location / Address": "1541 West Cesar Chavez",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Competitive rowing intro",
+      "Registration Status": "Open",
+      "Website": "texasrowingcenter.com"
+    },
+    {
+      "Camp Name": "Texas Rowing Center (High School)",
+      "Category": "Sports / Fitness",
+      "Ages": "14-18",
+      "Dates": "6/1-8/14",
+      "Price ($/wk or noted)": "$475/wk",
+      "Location / Address": "1541 West Cesar Chavez",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Advanced rowing/crew",
+      "Registration Status": "Open",
+      "Website": "texasrowingcenter.com"
+    },
+    {
+      "Camp Name": "All-Star Sports Camp",
+      "Category": "Sports / Fitness",
+      "Ages": "5-12",
+      "Dates": "Spring Break & Summer 2026",
+      "Price ($/wk or noted)": "$270 half-day / $420 full-day",
+      "Location / Address": "SoccerZone S Austin 9501 Menchaca Rd. / SoccerZone Lakeline 920 Old Mill Rd. Cedar Park",
+      "City/Area": "Austin / Cedar Park",
+      "Discounts / Notes": "Multi-sport; lunch from local restaurants for full-day",
+      "Registration Status": "Open",
+      "Website": "allstarsportscamp.org"
+    },
+    {
+      "Camp Name": "Austin Sports Academy Soccer",
+      "Category": "Sports / Fitness",
+      "Ages": "Varies",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "$245-425/wk (half or full day)",
+      "Location / Address": "Austin Sports Academy",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Registration opens April 1; 4-day and 5-day options",
+      "Registration Status": "Opens 4/1",
+      "Website": "austinsportsacademy.com/summercamps"
+    },
+    {
+      "Camp Name": "i9 Sports at Trinity Episcopal",
+      "Category": "Sports / Fitness",
+      "Ages": "Varies",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "Varies",
+      "Location / Address": "3901 Bee Cave Rd.",
+      "City/Area": "West Lake Hills",
+      "Discounts / Notes": "Sports-specific and multi-sport camps",
+      "Registration Status": "Open",
+      "Website": "austintrinity.org/programs/summer"
+    },
+    {
+      "Camp Name": "Maverick Horseback Riding",
+      "Category": "Sports / Fitness",
+      "Ages": "Varies",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "$400/wk (day)",
+      "Location / Address": "Lockhart, TX (south of Austin)",
+      "City/Area": "Lockhart",
+      "Discounts / Notes": "Day & overnight; 1.5-2 hrs mounted daily; arts, yoga, horse soccer",
+      "Registration Status": "Open",
+      "Website": "maverickhorsebackriding.com"
+    },
+    {
+      "Camp Name": "Camp Balcones (Camp Fire) - see General",
+      "Category": "Outdoor / Nature",
+      "Ages": "6-14",
+      "Dates": "6/1-7/3",
+      "Price ($/wk or noted)": "$375-450/wk",
+      "Location / Address": "Emma Long Metropolitan Park",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Nature-based STEAM + camping skills",
+      "Registration Status": "Open",
+      "Website": "camp-fire.org"
+    },
+    {
+      "Camp Name": "Coyote Kids Nature Camp",
+      "Category": "Outdoor / Nature",
+      "Ages": "5-11",
+      "Dates": "6/1-7/31",
+      "Price ($/wk or noted)": "$300/wk",
+      "Location / Address": "1042 Event Center Dr.",
+      "City/Area": "Dripping Springs",
+      "Discounts / Notes": "Conservation, biodynamics, food chains; Hill Country setting",
+      "Registration Status": "Open",
+      "Website": "drippingspringsranchpark.com/coyote-kids-camp"
+    },
+    {
+      "Camp Name": "Earth Native Overnight Camps",
+      "Category": "Overnight",
+      "Ages": "9-16",
+      "Dates": "6/1-6/26",
+      "Price ($/wk or noted)": "$895/week",
+      "Location / Address": "137 Woodview Ln.",
+      "City/Area": "Bastrop",
+      "Discounts / Notes": "Fire-making, shelter, archery, paintball; tents under stars",
+      "Registration Status": "Open",
+      "Website": "earthnativeschool.com/summer-camps"
+    },
+    {
+      "Camp Name": "Austin Zoo (see General)",
+      "Category": "Outdoor / Nature",
+      "Ages": "6-12",
+      "Dates": "6/1-8/7",
+      "Price ($/wk or noted)": "$395-425/wk",
+      "Location / Address": "10808 Rawhide Trl.",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Zoo tours + ambassador animal encounters",
+      "Registration Status": "Open",
+      "Website": "austinzoo.org"
+    },
+    {
+      "Camp Name": "City of Austin Parks - Summer Camp",
+      "Category": "Outdoor / Nature",
+      "Ages": "5-12 (teens 12-15 select sites)",
+      "Dates": "6/8-8/12",
+      "Price ($/wk or noted)": "City rates",
+      "Location / Address": "Multiple rec centers citywide",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Nature & Science reg opens 2/21 (residents 10am); Cultural/Art opens 2/28; FREE playground program 6/8-7/31",
+      "Registration Status": "Opens Today (2/21)",
+      "Website": "austintexas.gov/department/summer-camps-0"
+    },
+    {
+      "Camp Name": "City of Austin - FREE Summer Playgrounds",
+      "Category": "Outdoor / Nature",
+      "Ages": "5-12",
+      "Dates": "6/8-7/31",
+      "Price ($/wk or noted)": "FREE",
+      "Location / Address": "Garrison, Gillis, Govalle, Walnut Creek Parks",
+      "City/Area": "Austin",
+      "Discounts / Notes": "No advance registration; sign up day-of; Mon-Fri 9am-5pm",
+      "Registration Status": "Walk-in",
+      "Website": "austintexas.gov/department/summer-camps-0"
+    },
+    {
+      "Camp Name": "Camp Hope Day Camp (see General)",
+      "Category": "Faith-Based",
+      "Ages": "6-12",
+      "Dates": "7/6-10, 7/13-17",
+      "Price ($/wk or noted)": "$250 ($195 early bird)",
+      "Location / Address": "9508 Great Hills Trl.",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Gamer's Journey theme 2026; Bible-based activities",
+      "Registration Status": "Open",
+      "Website": "tllc.org/camp"
+    },
+    {
+      "Camp Name": "Camp Lone Star",
+      "Category": "Faith-Based",
+      "Ages": "7-18",
+      "Dates": "5/31-7/24",
+      "Price ($/wk or noted)": "$339-1,129",
+      "Location / Address": "2016 Camp Lone Star Rd.",
+      "City/Area": "La Grange, TX",
+      "Discounts / Notes": "Christ-centered; 80+ yrs; overnight; scholarships available",
+      "Registration Status": "Open",
+      "Website": "camplonestar.org"
+    },
+    {
+      "Camp Name": "St. Andrew's Episcopal School Camps",
+      "Category": "Faith-Based",
+      "Ages": "Varies",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "Varies",
+      "Location / Address": "St. Andrew's campus",
+      "City/Area": "Austin",
+      "Discounts / Notes": "STEAM, art, sports, music, preschool-full day; reg opens 2/25",
+      "Registration Status": "Opens 2/25",
+      "Website": "standrews.org"
+    },
+    {
+      "Camp Name": "St. Michael's Catholic Prep Camps",
+      "Category": "Faith-Based",
+      "Ages": "Varies",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "Varies",
+      "Location / Address": "St. Michael's campus",
+      "City/Area": "Austin",
+      "Discounts / Notes": "STEAM, art, music, sports, preschool; 300+ students/summer; spots limited",
+      "Registration Status": "Open",
+      "Website": "stmichaelsschool.com"
+    },
+    {
+      "Camp Name": "Creator Camp (Faith venue locations)",
+      "Category": "Faith-Based",
+      "Ages": "5-13",
+      "Dates": "Spring Break & Summer 2026",
+      "Price ($/wk or noted)": "$170-275",
+      "Location / Address": "Churches in Cedar Park, Round Rock, Austin, Lakeway",
+      "City/Area": "Austin Metro",
+      "Discounts / Notes": "Tech-focused; held at church venues",
+      "Registration Status": "Open",
+      "Website": "creatorcamp.org"
+    },
+    {
+      "Camp Name": "Camp Champions",
+      "Category": "Overnight",
+      "Ages": "6-17",
+      "Dates": "5/31-8/8",
+      "Price ($/wk or noted)": "$2,400-4,595/session",
+      "Location / Address": "775 Camp Rd.",
+      "City/Area": "Marble Falls",
+      "Discounts / Notes": "Lake LBJ; 1-4 week sessions; developmental focus",
+      "Registration Status": "Open",
+      "Website": "campchampions.com"
+    },
+    {
+      "Camp Name": "Kidventure Overnight Camps",
+      "Category": "Overnight",
+      "Ages": "8-16",
+      "Dates": "6/29-7/4, 7/11-19, 7/26-8/3",
+      "Price ($/wk or noted)": "$1,670-2,240",
+      "Location / Address": "Rocksprings, TX (Hill Country)",
+      "City/Area": "Rocksprings",
+      "Discounts / Notes": "Tech-free; round-trip transport from Austin included; Safari/Quest (8-12), Echo (13-16)",
+      "Registration Status": "Opens Feb 2026",
+      "Website": "kidventure.com"
+    },
+    {
+      "Camp Name": "Earth Native Overnight (see Outdoor)",
+      "Category": "Overnight",
+      "Ages": "9-16",
+      "Dates": "6/1-6/26",
+      "Price ($/wk or noted)": "$895/wk",
+      "Location / Address": "137 Woodview Ln., Bastrop",
+      "City/Area": "Bastrop",
+      "Discounts / Notes": "Mon-Fri wilderness skills; archery, fire, shelter",
+      "Registration Status": "Open",
+      "Website": "earthnativeschool.com/summer-camps"
+    },
+    {
+      "Camp Name": "Dragon's Lair Overnight Option",
+      "Category": "Overnight",
+      "Ages": "~7-17",
+      "Dates": "6/1-8/14",
+      "Price ($/wk or noted)": "$500-600",
+      "Location / Address": "2438 W. Anderson Ste. B-1",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Tabletop gaming overnight; limited details online",
+      "Registration Status": "Open",
+      "Website": "dlair.net/austin/events"
+    },
+    {
+      "Camp Name": "Camp Lone Star (see Faith)",
+      "Category": "Overnight",
+      "Ages": "7-18",
+      "Dates": "5/31-7/24",
+      "Price ($/wk or noted)": "$339-1,129",
+      "Location / Address": "La Grange, TX",
+      "City/Area": "La Grange",
+      "Discounts / Notes": "Christ-centered overnight; 80+ yrs; scholarships",
+      "Registration Status": "Open",
+      "Website": "camplonestar.org"
+    },
+    {
+      "Camp Name": "Badgerdog Creative Writing",
+      "Category": "Academic / Writing",
+      "Ages": "Grades 3-12 (ages 7-18)",
+      "Dates": "Spring Break & Summer 2026",
+      "Price ($/wk or noted)": "$250-595",
+      "Location / Address": "Various Austin & Round Rock locations",
+      "City/Area": "Austin / Round Rock",
+      "Discounts / Notes": "5% sibling discount; scholarships; student anthology published",
+      "Registration Status": "Open",
+      "Website": "austinlibrary.org/badgerdog"
+    },
+    {
+      "Camp Name": "Neuron Garage - see General",
+      "Category": "Academic / Writing",
+      "Ages": "5-12",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "$395-455/wk",
+      "Location / Address": "N, Central, S Austin, Westlake",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Growth mindset + engineering challenges",
+      "Registration Status": "Open",
+      "Website": "neurongarage.com"
+    },
+    {
+      "Camp Name": "Badgerdog at Trinity Episcopal",
+      "Category": "Academic / Writing",
+      "Ages": "Grades 3-8",
+      "Dates": "7/6-7/17",
+      "Price ($/wk or noted)": "Varies",
+      "Location / Address": "3901 Bee Cave Rd.",
+      "City/Area": "West Lake Hills",
+      "Discounts / Notes": "Poetry, fiction, nonfiction, playwriting with professional writers",
+      "Registration Status": "Open",
+      "Website": "austintrinity.org/programs/summer"
+    },
+    {
+      "Camp Name": "Extend-A-Care for Kids",
+      "Category": "Special Needs / Inclusive",
+      "Ages": "5-12",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "$190/wk",
+      "Location / Address": "8-10 summer camp locations; office 55 N. IH 35",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Field trips, swim, sports, STEM; financial assistance; 1:17-1:12 ratio",
+      "Registration Status": "Open",
+      "Website": "eackids.org"
+    },
+    {
+      "Camp Name": "City of Austin Therapeutic Recreation (McBeth)",
+      "Category": "Special Needs / Inclusive",
+      "Ages": "Varies",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "City rates",
+      "Location / Address": "McBeth Recreation Center",
+      "City/Area": "Austin",
+      "Discounts / Notes": "Registration opened 2/14 for residents",
+      "Registration Status": "Open",
+      "Website": "austintexas.gov/department/summer-camps-0"
+    },
+    {
+      "Camp Name": "Echo Hill Ranch Gold Star Camp",
+      "Category": "Special Needs / Inclusive",
+      "Ages": "Children of fallen military/first responders",
+      "Dates": "Summer 2026",
+      "Price ($/wk or noted)": "Varies / Subsidized",
+      "Location / Address": "Echo Hill Ranch",
+      "City/Area": "Hill Country",
+      "Discounts / Notes": "Founded by Kinky Friedman; Gold Star Children; free/low cost",
+      "Registration Status": "Open",
+      "Website": "echohillranch.com"
+    }
+  ],
+  "Legend & Stats": [
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Category",
+      "__EMPTY": "Color",
+      "__EMPTY_1": "Description"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "General / Day Camp",
+      "__EMPTY": "Light Blue",
+      "__EMPTY_1": "Traditional day camps, multi-activity"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "STEM / Tech",
+      "__EMPTY": "Light Green",
+      "__EMPTY_1": "Science, technology, engineering, math, coding"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Arts / Music",
+      "__EMPTY": "Light Yellow",
+      "__EMPTY_1": "Visual arts, painting, ceramics, music"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Theatre / Dance / Performing Arts",
+      "__EMPTY": "Peach",
+      "__EMPTY_1": "Drama, dance, musical theatre"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Sports / Fitness",
+      "__EMPTY": "Green",
+      "__EMPTY_1": "Athletics, gymnastics, rowing, soccer"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Outdoor / Nature",
+      "__EMPTY": "Sky Blue",
+      "__EMPTY_1": "Wilderness, environmental, nature-based"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Faith-Based",
+      "__EMPTY": "Rose",
+      "__EMPTY_1": "Church/faith-affiliated camps"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Overnight",
+      "__EMPTY": "Lavender",
+      "__EMPTY_1": "Sleepaway / residential camps"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Academic / Writing",
+      "__EMPTY": "Light Yellow-Green",
+      "__EMPTY_1": "Creative writing, academic enrichment"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Special Needs / Inclusive",
+      "__EMPTY": "Steel Blue",
+      "__EMPTY_1": "Inclusive programs, therapeutic, special populations"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Total Camps Listed:"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Data Sources"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Austin Chronicle 2026 Summer Camp Guide (austinchronicle.com/summer-camps)"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "365 Things Austin 2026 Camp Guide (365thingsaustin.com)"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "AustinMoms.com Camp Guide 2026"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "AustinTexas.gov Parks & Recreation Summer Camps"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Austin YMCA (austinymca.org/camp)"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Hello-Recess Austin Camps 2026"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Individual camp websites (verified Feb 2026)"
+    },
+    {
+      "Austin Summer Camps 2026 — Category Legend": "Last Updated: February 21, 2026"
+    }
+  ]
+}
