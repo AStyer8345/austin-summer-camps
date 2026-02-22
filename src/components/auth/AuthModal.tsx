@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Mail, Lock, User, Loader2, AlertTriangle } from 'lucide-react';
+import { X, Mail, Lock, User, Loader2 } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 
 interface AuthModalProps {
@@ -78,23 +78,24 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
 
           {!supabaseConfigured ? (
             <div className="text-center py-4">
-              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                <AlertTriangle className="w-6 h-6 text-amber-600" />
+              <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <User className="w-6 h-6 text-sky-600" />
               </div>
-              <h2 className="text-lg font-bold text-gray-900 mb-2">Authentication Not Set Up</h2>
+              <h2 className="text-lg font-bold text-gray-900 mb-2">Welcome!</h2>
               <p className="text-sm text-gray-500 mb-4">
-                Sign-in requires a Supabase project. Add your Supabase credentials to <code className="text-xs bg-gray-100 px-1.5 py-0.5 rounded">.env.local</code> to enable authentication.
+                You can use the calendar and browse camps without signing in. Your calendar is saved automatically in your browser.
               </p>
-              <div className="bg-gray-50 rounded-xl p-3 text-left text-xs text-gray-600 font-mono space-y-1">
-                <p>NEXT_PUBLIC_SUPABASE_URL=...</p>
-                <p>NEXT_PUBLIC_SUPABASE_ANON_KEY=...</p>
+              <div className="space-y-2">
+                <button
+                  onClick={onClose}
+                  className="w-full px-6 py-2.5 bg-sky-600 hover:bg-sky-700 text-white text-sm font-medium rounded-xl transition-colors"
+                >
+                  Continue as Guest
+                </button>
+                <p className="text-[10px] text-gray-400 mt-3">
+                  Full account sign-in coming soon — save calendars across devices, get alerts, and more.
+                </p>
               </div>
-              <button
-                onClick={onClose}
-                className="mt-4 px-6 py-2 bg-sky-600 hover:bg-sky-700 text-white text-sm font-medium rounded-xl transition-colors"
-              >
-                Got it
-              </button>
             </div>
           ) : (
           <>

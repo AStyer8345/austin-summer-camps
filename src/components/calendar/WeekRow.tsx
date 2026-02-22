@@ -2,7 +2,7 @@
 
 import { useDroppable } from '@dnd-kit/core';
 import { Camp, CampSession, CATEGORY_CONFIG } from '@/types/database';
-import { X } from 'lucide-react';
+import { X, ExternalLink } from 'lucide-react';
 
 interface SessionCalendarEntry {
   weekIndex: number;
@@ -72,12 +72,26 @@ export default function WeekRow({ weekIndex, weekLabel, monthLabel, entries, onR
                     {entry.session.session_name} &middot; ${entry.session.price?.toLocaleString() || '—'}
                   </p>
                 </div>
-                <button
-                  onClick={() => onRemoveEntry(entry.weekIndex, entry.session.id)}
-                  className="opacity-0 group-hover:opacity-100 ml-1 p-0.5 rounded hover:bg-white/50 transition-all"
-                >
-                  <X className="w-3 h-3 text-gray-400" />
-                </button>
+                <div className="flex items-center gap-0.5 ml-1">
+                  {(entry.camp.registration_url || entry.camp.website) && (
+                    <a
+                      href={entry.camp.registration_url || entry.camp.website || '#'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="opacity-0 group-hover:opacity-100 p-0.5 rounded hover:bg-white/50 transition-all"
+                      title={`Register for ${entry.camp.name}`}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <ExternalLink className="w-3 h-3 text-sky-500" />
+                    </a>
+                  )}
+                  <button
+                    onClick={() => onRemoveEntry(entry.weekIndex, entry.session.id)}
+                    className="opacity-0 group-hover:opacity-100 p-0.5 rounded hover:bg-white/50 transition-all"
+                  >
+                    <X className="w-3 h-3 text-gray-400" />
+                  </button>
+                </div>
               </div>
             );
           })

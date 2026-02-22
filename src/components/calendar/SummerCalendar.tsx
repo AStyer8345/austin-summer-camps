@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import {
   DndContext,
   DragOverlay,
@@ -16,9 +16,11 @@ import { useDraggable } from '@dnd-kit/core';
 import { Camp, CampSession, CATEGORY_CONFIG } from '@/types/database';
 import { getSummerWeeks, formatPriceRange } from '@/lib/utils';
 import { format, parseISO, isWithinInterval, startOfWeek } from 'date-fns';
-import { Search, DollarSign, Trash2, Download, ChevronRight, ChevronDown, Calendar, MapPin, Clock, Users } from 'lucide-react';
+import { Search, DollarSign, Trash2, Download, ChevronRight, ChevronDown, Calendar, MapPin, Clock, Users, ExternalLink } from 'lucide-react';
 import WeekRow from './WeekRow';
 import CampDragOverlay from './CampDragOverlay';
+
+const STORAGE_KEY = 'austin-camps-calendar-entries';
 
 interface SessionCalendarEntry {
   weekIndex: number;
@@ -30,14 +32,60 @@ interface SummerCalendarProps {
   camps: Camp[];
 }
 
+// Serializable entry for localStorage (stores IDs instead of full objects)
+interface StoredEntry {
+  weekIndex: number;
+  campId: string;
+  sessionId: string;
+}
+
 export default function SummerCalendar({ camps }: SummerCalendarProps) {
   const [entries, setEntries] = useState<SessionCalendarEntry[]>([]);
   const [activeDragSession, setActiveDragSession] = useState<{ camp: Camp; session: CampSession } | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [expandedCampId, setExpandedCampId] = useState<string | null>(null);
+  const [hydrated, setHydrated] = useState(false);
 
   const weeks = useMemo(() => getSummerWeeks(2026), []);
+
+  // Load entries from localStorage on mount (rehydrate from camp data)
+  useEffect(() => {
+    if (camps.length === 0) return;
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        const stored: StoredEntry[] = JSON.parse(raw);
+        const rehydrated: SessionCalendarEntry[] = [];
+        for (const item of stored) {
+          const camp = camps.find(c => c.id === item.campId);
+          if (!camp) continue;
+          const session = camp.sessions?.find(s => s.id === item.sessionId);
+          if (!session) continue;
+          rehydrated.push({ weekIndex: item.weekIndex, camp, session });
+        }
+        setEntries(rehydrated);
+      }
+    } catch (e) {
+      console.warn('Failed to load calendar entries from localStorage:', e);
+    }
+    setHydrated(true);
+  }, [camps]);
+
+  // Save entries to localStorage whenever they change (after initial hydration)
+  useEffect(() => {
+    if (!hydrated) return;
+    try {
+      const stored: StoredEntry[] = entries.map(e => ({
+        weekIndex: e.weekIndex,
+        campId: e.camp.id,
+        sessionId: e.session.id,
+      }));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+    } catch (e) {
+      console.warn('Failed to save calendar entries to localStorage:', e);
+    }
+  }, [entries, hydrated]);
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
@@ -146,7 +194,61 @@ export default function SummerCalendar({ camps }: SummerCalendarProps) {
     setEntries(prev => prev.filter(e => !(e.weekIndex === weekIndex && e.session.id === sessionId)));
   }, []);
 
-  const clearAll = () => setEntries([]);
+  const clearAll = () => {
+    setEntries([]);
+    localStorage.removeItem(STORAGE_KEY);
+  };
+
+  // Export calendar as text with registration links
+  const exportCalendar = useCallback(() => {
+    if (entries.length === 0) return;
+
+    const grouped: Record<number, SessionCalendarEntry[]> = {};
+    entries.forEach(e => {
+      if (!grouped[e.weekIndex]) grouped[e.weekIndex] = [];
+      grouped[e.weekIndex].push(e);
+    });
+
+    let text = '🏕️ SUMMER CAMP CALENDAR 2026\n';
+    text += '================================\n\n';
+
+    const sortedWeeks = Object.keys(grouped).map(Number).sort((a, b) => a - b);
+    for (const weekIdx of sortedWeeks) {
+      const week = weeks[weekIdx];
+      if (!week) continue;
+      text += `📅 ${week.label} (${format(week.start, 'MMM d')} - ${format(week.end, 'MMM d')})\n`;
+      for (const entry of grouped[weekIdx]) {
+        const price = entry.session.price || entry.camp.price_min || 0;
+        text += `   • ${entry.camp.name} - ${entry.session.session_name || 'Session'}\n`;
+        text += `     Cost: $${price.toLocaleString()}\n`;
+        if (entry.session.start_time) {
+          text += `     Time: ${entry.session.start_time} - ${entry.session.end_time}\n`;
+        }
+        const regUrl = entry.camp.registration_url || entry.camp.website;
+        if (regUrl) {
+          text += `     Register: ${regUrl}\n`;
+        }
+      }
+      text += '\n';
+    }
+
+    text += `💰 TOTAL ESTIMATED COST: $${totalCost.toLocaleString()}\n`;
+    text += `📊 ${entries.length} sessions across ${sortedWeeks.length} weeks\n`;
+
+    // Copy to clipboard
+    navigator.clipboard.writeText(text).then(() => {
+      alert('Calendar copied to clipboard! You can paste it into a document or email.');
+    }).catch(() => {
+      // Fallback: open in a new window
+      const blob = new Blob([text], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'summer-camp-calendar-2026.txt';
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+  }, [entries, weeks, totalCost]);
 
   const formatSessionDates = (session: CampSession) => {
     const start = parseISO(session.start_date);
@@ -196,6 +298,7 @@ export default function SummerCalendar({ camps }: SummerCalendarProps) {
                   Clear
                 </button>
                 <button
+                  onClick={exportCalendar}
                   className="flex items-center gap-1 text-xs text-sky-600 hover:text-sky-700 px-2 py-1 rounded-lg hover:bg-sky-50 transition-colors"
                   disabled={entries.length === 0}
                 >
@@ -367,6 +470,55 @@ export default function SummerCalendar({ camps }: SummerCalendarProps) {
             </div>
           </div>
         </div>
+
+        {/* Registration Links Summary */}
+        {entries.length > 0 && (
+          <div className="mt-6 bg-white rounded-xl border border-gray-200 p-4">
+            <h3 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
+              <ExternalLink className="w-4 h-4 text-sky-600" />
+              Registration Links
+            </h3>
+            <p className="text-xs text-gray-500 mb-3">
+              Click each link below to go directly to the registration page for each camp on your calendar.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {Array.from(new Set(entries.map(e => e.camp.id))).map(campId => {
+                const entry = entries.find(e => e.camp.id === campId)!;
+                const camp = entry.camp;
+                const regUrl = camp.registration_url || camp.website;
+                const config = CATEGORY_CONFIG[camp.category];
+                const campSessions = entries.filter(e => e.camp.id === campId);
+                return (
+                  <div key={campId} className={`flex items-start gap-2 p-2.5 rounded-lg border ${config.borderColor} ${config.bgColor}`}>
+                    <span
+                      className="w-2.5 h-2.5 rounded-full flex-shrink-0 mt-1"
+                      style={{ backgroundColor: config.mapPin }}
+                    />
+                    <div className="min-w-0 flex-1">
+                      <p className={`text-xs font-semibold ${config.color}`}>{camp.name}</p>
+                      <p className="text-[10px] text-gray-500">
+                        {campSessions.length} session{campSessions.length !== 1 ? 's' : ''} &middot; ${campSessions.reduce((sum, e) => sum + (e.session.price || camp.price_min || 0), 0).toLocaleString()}
+                      </p>
+                      {regUrl ? (
+                        <a
+                          href={regUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 mt-1 text-[11px] font-medium text-sky-600 hover:text-sky-700 hover:underline"
+                        >
+                          <ExternalLink className="w-3 h-3" />
+                          Register Now
+                        </a>
+                      ) : (
+                        <span className="text-[10px] text-gray-400 mt-1 block">No registration link available</span>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
 
         {/* Mobile camp browser */}
         <div className="lg:hidden mt-6">

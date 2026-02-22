@@ -44,7 +44,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${plusJakarta.variable}`}>
       <head>
         <link
-          href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+          href="https://api.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.css"
           rel="stylesheet"
         />
       </head>
