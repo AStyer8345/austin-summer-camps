@@ -34,7 +34,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto text-balance">
-              Browse 60+ camps across Austin. Filter by age, interest, budget, and location.
+              Browse 100+ camps across Austin. Filter by age, interest, budget, and location.
               Plan your entire summer in minutes.
             </p>
           </motion.div>
@@ -76,7 +76,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-10 grid grid-cols-3 gap-4 max-w-lg mx-auto"
           >
-            <StatItem value="60+" label="Camps" />
+            <StatItem value="100+" label="Camps" />
             <StatItem value="5" label="Regions" />
             <StatItem value="FREE" label="to $6,875" />
           </motion.div>

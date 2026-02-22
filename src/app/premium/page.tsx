@@ -6,7 +6,7 @@ import Header from '@/components/layout/Header';
 import { Check, Sparkles, Crown, Zap, Shield, ArrowRight } from 'lucide-react';
 
 const FREE_FEATURES = [
-  'Browse all 60+ Austin camps',
+  'Browse all 100+ Austin camps',
   'Filter by age, price & category',
   'Interactive map view',
   'Drag-and-drop calendar planner',

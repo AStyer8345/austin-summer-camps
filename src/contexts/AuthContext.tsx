@@ -6,6 +6,7 @@ import type { User as SupabaseUser } from '@supabase/supabase-js';
 interface AuthContextType {
   user: SupabaseUser | null;
   loading: boolean;
+  supabaseConfigured: boolean;
   signIn: (email: string, password: string) => Promise<{ error: string | null }>;
   signUp: (email: string, password: string, name: string) => Promise<{ error: string | null }>;
   signOut: () => Promise<void>;
@@ -15,6 +16,7 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType>({
   user: null,
   loading: true,
+  supabaseConfigured: false,
   signIn: async () => ({ error: 'Not initialized' }),
   signUp: async () => ({ error: 'Not initialized' }),
   signOut: async () => {},
@@ -26,6 +28,7 @@ export const useAuth = () => useContext(AuthContext);
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<SupabaseUser | null>(null);
   const [loading, setLoading] = useState(true);
+  const [supabaseConfigured, setSupabaseConfigured] = useState(false);
 
   useEffect(() => {
     // Check for existing session
@@ -36,6 +39,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     try {
       const { createClient } = await import('@/lib/supabase/client');
       const supabase = createClient();
+      setSupabaseConfigured(true);
       const { data: { session } } = await supabase.auth.getSession();
       setUser(session?.user || null);
 
@@ -47,6 +51,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       return () => subscription.unsubscribe();
     } catch {
       // Supabase not configured, that's ok
+      setSupabaseConfigured(false);
       setUser(null);
     } finally {
       setLoading(false);
@@ -107,7 +112,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   return (
-    <AuthContext.Provider value={{ user, loading, signIn, signUp, signOut, signInWithGoogle }}>
+    <AuthContext.Provider value={{ user, loading, supabaseConfigured, signIn, signUp, signOut, signInWithGoogle }}>
       {children}
     </AuthContext.Provider>
   );

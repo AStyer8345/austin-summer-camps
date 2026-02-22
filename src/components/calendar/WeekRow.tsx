@@ -1,21 +1,21 @@
 'use client';
 
 import { useDroppable } from '@dnd-kit/core';
-import { Camp, CATEGORY_CONFIG } from '@/types/database';
-import { formatPriceRange } from '@/lib/utils';
+import { Camp, CampSession, CATEGORY_CONFIG } from '@/types/database';
 import { X } from 'lucide-react';
 
-interface CalendarEntry {
+interface SessionCalendarEntry {
   weekIndex: number;
   camp: Camp;
+  session: CampSession;
 }
 
 interface WeekRowProps {
   weekIndex: number;
   weekLabel: string;
   monthLabel: string;
-  entries: CalendarEntry[];
-  onRemoveEntry: (weekIndex: number, campId: string) => void;
+  entries: SessionCalendarEntry[];
+  onRemoveEntry: (weekIndex: number, sessionId: string) => void;
   isOver: boolean;
 }
 
@@ -24,7 +24,7 @@ export default function WeekRow({ weekIndex, weekLabel, monthLabel, entries, onR
     id: `week-${weekIndex}`,
   });
 
-  const weekCost = entries.reduce((sum, e) => sum + (e.camp.price_min || e.camp.price_max || 0), 0);
+  const weekCost = entries.reduce((sum, e) => sum + (e.session.price || e.camp.price_min || 0), 0);
 
   return (
     <div
@@ -42,7 +42,7 @@ export default function WeekRow({ weekIndex, weekLabel, monthLabel, entries, onR
         <p className="text-[10px] font-semibold text-gray-400 uppercase">{monthLabel}</p>
         <p className="text-xs font-medium text-gray-700">{weekLabel}</p>
         {weekCost > 0 && (
-          <p className="text-[10px] font-medium text-green-600 mt-0.5">${weekCost}</p>
+          <p className="text-[10px] font-medium text-green-600 mt-0.5">${weekCost.toLocaleString()}</p>
         )}
       </div>
 
@@ -50,14 +50,14 @@ export default function WeekRow({ weekIndex, weekLabel, monthLabel, entries, onR
       <div className="flex-1 px-2 py-2 flex items-center gap-1.5 min-h-[52px] flex-wrap">
         {entries.length === 0 ? (
           <p className={`text-xs ${isOver ? 'text-sky-500 font-medium' : 'text-gray-300'}`}>
-            {isOver ? 'Drop camp here!' : 'Drag a camp here...'}
+            {isOver ? 'Drop session here!' : 'Drag a session here...'}
           </p>
         ) : (
           entries.map((entry) => {
             const config = CATEGORY_CONFIG[entry.camp.category];
             return (
               <div
-                key={entry.camp.id}
+                key={entry.session.id}
                 className={`group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg ${config.bgColor} ${config.borderColor} border`}
               >
                 <span
@@ -65,15 +65,15 @@ export default function WeekRow({ weekIndex, weekLabel, monthLabel, entries, onR
                   style={{ backgroundColor: config.mapPin }}
                 />
                 <div className="min-w-0">
-                  <p className={`text-xs font-medium ${config.color} truncate max-w-[160px]`}>
+                  <p className={`text-xs font-medium ${config.color} truncate max-w-[140px]`}>
                     {entry.camp.name}
                   </p>
-                  <p className="text-[10px] text-gray-500">
-                    {formatPriceRange(entry.camp.price_min, entry.camp.price_max)}
+                  <p className="text-[10px] text-gray-500 truncate max-w-[140px]">
+                    {entry.session.session_name} &middot; ${entry.session.price?.toLocaleString() || '—'}
                   </p>
                 </div>
                 <button
-                  onClick={() => onRemoveEntry(entry.weekIndex, entry.camp.id)}
+                  onClick={() => onRemoveEntry(entry.weekIndex, entry.session.id)}
                   className="opacity-0 group-hover:opacity-100 ml-1 p-0.5 rounded hover:bg-white/50 transition-all"
                 >
                   <X className="w-3 h-3 text-gray-400" />

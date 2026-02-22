@@ -19,7 +19,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Austin Summer Camp Finder | Find the Perfect Camp for Your Kids",
   description:
-    "Discover, compare, and plan summer camps across Austin, TX. Browse 60+ camps by age, interest, price, and location. AI-powered summer planning.",
+    "Discover, compare, and plan summer camps across Austin, TX. Browse 100+ camps by age, interest, price, and location. AI-powered summer planning.",
   keywords: [
     "Austin summer camps",
     "kids camps Austin TX",

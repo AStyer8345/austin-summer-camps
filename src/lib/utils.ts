@@ -40,7 +40,7 @@ export function formatDateRange(start: string, end: string): string {
   return `${format(s, 'MMM d')} - ${format(e, 'MMM d')}`;
 }
 
-export function getSummerWeeks(year: number = 2025): { start: Date; end: Date; label: string }[] {
+export function getSummerWeeks(year: number = 2026): { start: Date; end: Date; label: string }[] {
   const summerStart = new Date(year, 5, 2); // June 2
   const summerEnd = new Date(year, 7, 15); // Aug 15
 

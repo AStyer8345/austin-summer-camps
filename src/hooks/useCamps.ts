@@ -5,6 +5,7 @@ import type { Camp, CampFilters } from '@/types/database';
 
 // Sample data for development (works without Supabase)
 import { SAMPLE_CAMP_DATA } from '@/lib/sample-data';
+import { attachSessionsToCamps } from '@/lib/session-data';
 
 export function useCamps() {
   const [camps, setCamps] = useState<Camp[]>([]);
@@ -24,7 +25,7 @@ export function useCamps() {
       if (res.ok) {
         const data = await res.json();
         if (Array.isArray(data) && data.length > 0) {
-          setCamps(data);
+          setCamps(attachSessionsToCamps(data));
           setLoading(false);
           return;
         }
@@ -33,8 +34,8 @@ export function useCamps() {
       setError(err instanceof Error ? err.message : 'Failed to load camps');
     }
 
-    // Fallback to sample data
-    setCamps(SAMPLE_CAMP_DATA);
+    // Fallback to sample data with sessions
+    setCamps(attachSessionsToCamps(SAMPLE_CAMP_DATA));
     setLoading(false);
   }
 
